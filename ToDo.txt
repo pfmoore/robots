@@ -1,0 +1,21 @@
+Examples of Robots
+==================
+
+1. Moves steadily in a given direction (static, based on class)
+2. Moves steadily in a given direction (chosen at creation time)
+3. Moves randomly
+
+Things to Consider
+==================
+
+1. Handling hitting the edge
+   a. Stop
+   b. Change colour ("signal an error")
+   c. Rebound
+2. Move "hit the edge" handling into the base class
+3. Collisions (harder - needs the idea of a "group" of bots)
+
+Longer Term
+===========
+
+How to combine behaviours - multiple inheritance?
