@@ -2,18 +2,18 @@ import tkinter as tk
 from tkinter import ttk, N, E, W, S
 
 class Display:
-    def __init__(self):
+    def __init__(self, rows, columns):
         self.root = tk.Tk()
 
         self.root.title("Robot Playground")
-        for c in range(8):
+        for c in range(columns):
             self.root.columnconfigure(c, weight=1)
-        for r in range(8):
+        for r in range(rows):
             self.root.rowconfigure(r, weight=1)
         self.board = {}
 
-        for r in range(8):
-            for c in range(8):
+        for r in range(rows):
+            for c in range(columns):
                 lbl = tk.Button(self.root, text="   ")
                 lbl["bg"] = "white"
                 lbl["font"] = ("Consolas", 12)

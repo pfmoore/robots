@@ -1,8 +1,8 @@
 from view import Display
 from robots import make_robots
 
-dsp = Display()
-robots = make_robots()
+rows, columns, robots = make_robots()
+dsp = Display(rows, columns)
 
 def step(*args):
     for r in robots:
